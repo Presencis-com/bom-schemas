@@ -33,5 +33,28 @@
   "devDependencies": {
     "@types/node": "^22.13.4",
     "typescript": "^5.7.3"
+  },
+  "author": "Presencis Ltd <github@presencis.com>",
+  "homepage": "https://github.com/Presencis-com/bom-schemas#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Presencis-com/bom-schemas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Presencis-com/bom-schemas/issues"
+  },
+  "keywords": [
+    "ai-bom",
+    "cbom",
+    "vsbom",
+    "ai-governance",
+    "eu-ai-act",
+    "dora",
+    "nis2",
+    "json-schema",
+    "zod"
+  ],
+  "publishConfig": {
+    "access": "public"
   }
 }
