@@ -1,0 +1,42 @@
+{
+  "schema": "presencis-vsbom-v1",
+  "subject": "example-release",
+  "postures": [
+    {
+      "kind": "fixed_vsbom",
+      "generations": 1,
+      "component_count": 12,
+      "valid": true,
+      "evidence": {
+        "state": "judged",
+        "evidence_id": "vs-1",
+        "scope": "release snapshot",
+        "limitations": "status of one release"
+      }
+    },
+    {
+      "kind": "living_vsbom",
+      "generations": 4,
+      "component_count": 12,
+      "valid": false,
+      "evidence": {
+        "state": "cannot-tell",
+        "limitations": "runtime observations are incomplete"
+      }
+    },
+    {
+      "kind": "fixed_aibom",
+      "generations": 1,
+      "component_count": 2,
+      "valid": true,
+      "evidence": { "state": "judged", "evidence_id": "ai-1" }
+    },
+    {
+      "kind": "living_aibom",
+      "generations": 0,
+      "component_count": 2,
+      "valid": false,
+      "evidence": { "state": "untested" }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "schema": "presencis-vsbom-v1",
+  "subject": "example-release",
+  "postures": [
+    {
+      "kind": "floating_vsbom",
+      "evidence": { "state": "judged" }
+    }
+  ]
+}

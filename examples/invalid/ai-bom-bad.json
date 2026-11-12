@@ -1,0 +1,32 @@
+{
+  "schema": "presencis-ai-bom-v1",
+  "model": {
+    "name": "Example Clinical Draft",
+    "provenance": {
+      "origin": "supplier-registry",
+      "supplier": "Example Foundry",
+      "retrieved_at": "2026-11-12T00:00:00Z"
+    },
+    "base_architecture": "decoder-only",
+    "domain_specialization": {
+      "domain": "clinical-admin",
+      "lineage": ["general-base", "clinical-admin"]
+    },
+    "precision": {
+      "quantization": "int8",
+      "profile": "weights-int8"
+    },
+    "evaluation": {
+      "state": "guessed",
+      "evidence_id": "ev-example-1"
+    },
+    "attestation": {
+      "digest_alg": "sha-256",
+      "digest_hex": "196826e50343e8c14ca1ccf9cee1296acb2290bee645532083e6720575960580",
+      "signature_alg": "ml-dsa-65",
+      "signature_hex": "bda231a2f0aef51b63ab1fb11c6d76f58e921fdd9cf668eb0431cf863e5032f6",
+      "key_id": "196826e50343e8c14ca1ccf9cee1296acb2290bee645532083e6720575960580"
+    }
+  },
+  "alignment": ["eu-ai-act-art-11", "iso-42001", "nist-ai-rmf"]
+}

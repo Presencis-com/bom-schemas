@@ -1,0 +1,13 @@
+{
+  "schema": "presencis-cbom-v1",
+  "components": [
+    {
+      "name": "evidence-signature",
+      "primitive": "signature",
+      "parameter_set": "ML-DSA-65",
+      "quantum_safety": "quantum",
+      "key_rotation": { "posture": "scheduled", "interval_days": 90 }
+    }
+  ],
+  "alignment": ["dora"]
+}

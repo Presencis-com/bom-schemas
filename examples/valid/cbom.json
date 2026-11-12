@@ -1,0 +1,48 @@
+{
+  "schema": "presencis-cbom-v1",
+  "components": [
+    {
+      "name": "evidence-signature",
+      "primitive": "signature",
+      "parameter_set": "ML-DSA-65",
+      "quantum_safety": "pqc",
+      "key_rotation": { "posture": "scheduled", "interval_days": 90 }
+    },
+    {
+      "name": "hybrid-evidence-signature",
+      "primitive": "signature",
+      "parameter_set": "ML-DSA-65",
+      "quantum_safety": "hybrid",
+      "key_rotation": { "posture": "scheduled", "interval_days": 90 }
+    },
+    {
+      "name": "record-encryption",
+      "primitive": "symmetric",
+      "parameter_set": "AES-256-GCM",
+      "quantum_safety": "classical",
+      "key_rotation": { "posture": "scheduled", "interval_days": 30 }
+    },
+    {
+      "name": "session-agreement",
+      "primitive": "kem",
+      "parameter_set": "ML-KEM-768",
+      "quantum_safety": "pqc",
+      "key_rotation": { "posture": "on-event", "interval_days": 0 }
+    },
+    {
+      "name": "identity-signature",
+      "primitive": "asymmetric",
+      "parameter_set": "Ed25519",
+      "quantum_safety": "classical",
+      "key_rotation": { "posture": "manual", "interval_days": 365 }
+    },
+    {
+      "name": "chain-hash",
+      "primitive": "hash",
+      "parameter_set": "SHA-256",
+      "quantum_safety": "classical",
+      "key_rotation": { "posture": "none", "interval_days": 0 }
+    }
+  ],
+  "alignment": ["dora", "nis2", "cra"]
+}
