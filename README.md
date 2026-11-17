@@ -17,3 +17,11 @@ npm test
 `dist/` is build output and is gitignored. `npm run build` emits it.
 
 The schemas describe document shape. They do not verify a signature.
+
+## Related Documentation
+
+- [Aegis Regulatory Readiness & Quad-BOM](https://presencis.com/solutions/aegis/) · [VSBOM Overview](https://presencis.com/vsbom/)
+- [Vigil Shadow AI & Estate Visibility](https://presencis.com/solutions/vigil/)
+- [Regulatory Frameworks Corpus](https://presencis.com/regulations/) · [Compliance Q&A](https://presencis.com/questions/)
+- [Offline Signature & Evidence Verifier (`@presencis/halo-verify`)](https://github.com/Presencis-com/halo-verify)
+
